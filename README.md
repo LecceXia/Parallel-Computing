@@ -34,10 +34,6 @@ mpirun -np 8 -oversubscribe ./mpi_hello
 (注意size和rank顺序会影响最后执行的结果)  
 
 ## Bacth
-#!/bin/bash  
-#SBATCH --job-name = test  
-#SBATCH --output = test.out  
-#SBATCH --error = test.err  
-#SBATCH --time = 00:05:00  
+开头#!/bin/bash  
 
 注意用vscode的时候需要把下面的CRLF改成LF 因为linux下换行只有LF  
