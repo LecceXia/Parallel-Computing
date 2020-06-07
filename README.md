@@ -15,3 +15,11 @@ vim进入代码内部 i进行编辑 编辑完后 esc切换模式 结尾输入:wq
 mpicc:not command not found 解决方法
 找到该指令的上一级bin目录 添加到PATH中 即可解决
 export PATH=/...../bin:$PATH
+
+openMP:
+export OMP_NUM_THREADS=8
+./omp_hello
+
+MPI:
+  module load openmpi/3.1.2
+  mpirun -np 8 -oversubscribe ./mpi_hello
