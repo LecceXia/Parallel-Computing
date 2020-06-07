@@ -28,5 +28,7 @@ export OMP_NUM_THREADS=8
 ./omp_hello  
 
 MPI:  
-  module load openmpi/3.1.2  
-  mpirun -np 8 -oversubscribe ./mpi_hello  
+module load openmpi/3.1.2  
+mpirun -np 8 -oversubscribe ./mpi_hello    
+  
+(注意size和rank顺序会影响最后执行的结果)  
