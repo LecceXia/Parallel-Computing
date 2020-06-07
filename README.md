@@ -7,7 +7,7 @@ mix 使用中，资源不一定全部使用
 
 sinfo -p partition_name 
 
-srun -p partition_name -w node --pty bash 
+srun -p partition_name -w node --pty bash （-p指定分区 -w指定节点）
 
 vim进入代码内部 i进行编辑 编辑完后 esc切换模式 结尾输入:wq 保存并退出编辑
 
